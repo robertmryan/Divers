@@ -11,8 +11,9 @@ import UIKit
 class ProfileViewController: UIViewController {
     
     struct CellData {
-        var cell : Int!
-        var text : String!
+        let text: String
+        var value: Float
+        var selected: Bool
     }
     
     var arrayOfCellData = [CellData]()
@@ -28,7 +29,8 @@ class ProfileViewController: UIViewController {
         profilTableView.register(UINib(nibName: "DiveNewsShort", bundle: nil), forCellReuseIdentifier: "DiveNewsShort")
         
         // Generating dummy content
-        arrayOfCellData = [CellData(cell : 1, text : ""), CellData(cell : 2, text : "Hi")]
+        arrayOfCellData = [CellData(text: "Foo", value: 0.5, selected: true), CellData(text : "Hi", value: 0.5, selected: true)]
+        
         print("TableViewController aufgerufen")
         
         // adding refresh control, this adds some dummy content for testing
@@ -44,8 +46,11 @@ class ProfileViewController: UIViewController {
             
             print("Doing stuff")
             
-            for i in 1...10 {
-                self.arrayOfCellData.append(CellData(cell : i, text : "Hallo!"))
+            let formatter = NumberFormatter()
+            formatter.numberStyle = .spellOut
+            
+            for i in 1 ... 100 {
+                self.arrayOfCellData.append(CellData(text: formatter.string(from: NSNumber(value: i))!, value: 0.5, selected: true))
             }
             
             self.profilTableView.reloadData()
@@ -64,8 +69,12 @@ extension ProfileViewController: UITableViewDataSource {
         
         // assigning cell
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiveNewsShort", for: indexPath) as! DiveNewsShort
+        cell.delegate = self
         
-        cell.newsLabel.text = arrayOfCellData[indexPath.row].text
+        let cellData = arrayOfCellData[indexPath.row]
+        cell.newsLabel.text = cellData.text
+        cell.newsSwitch.setOn(cellData.selected, animated: false)
+        cell.newsSlider.setValue(cellData.value, animated: false)
         
         return cell
     }
@@ -82,4 +91,20 @@ extension ProfileViewController: UITableViewDelegate {
         return 100
     }
     
+}
+
+extension ProfileViewController: DiveNewsShortDelegate {
+    
+    func didChangeSwitchValue(for cell: DiveNewsShort, newsSwitch: UISwitch) {
+        guard let indexPath = profilTableView.indexPath(for: cell) else { return }
+        
+        arrayOfCellData[indexPath.row].selected = newsSwitch.isOn
+    }
+    
+    func didChangeSliderValue(for cell: DiveNewsShort, newsSlider: UISlider) {
+        guard let indexPath = profilTableView.indexPath(for: cell) else { return }
+        
+        arrayOfCellData[indexPath.row].value = newsSlider.value
+    }
+
 }

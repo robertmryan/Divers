@@ -35,15 +35,23 @@
                     <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WtC-ox-dqt">
                         <rect key="frame" x="96" y="45" width="118" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="didChangeSliderValue:" destination="KGk-i7-Jjw" eventType="valueChanged" id="nXD-Er-sMp"/>
+                        </connections>
                     </slider>
                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PyD-WA-nat">
                         <rect key="frame" x="267" y="39" width="51" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <connections>
+                            <action selector="didChangeSwitchValue:" destination="KGk-i7-Jjw" eventType="valueChanged" id="yOv-MO-go6"/>
+                        </connections>
                     </switch>
                 </subviews>
             </tableViewCellContentView>
             <connections>
                 <outlet property="newsLabel" destination="XtY-nS-C0h" id="gsJ-Fo-gA8"/>
+                <outlet property="newsSlider" destination="WtC-ox-dqt" id="c8X-cc-ZrF"/>
+                <outlet property="newsSwitch" destination="PyD-WA-nat" id="TaH-lM-P4z"/>
             </connections>
             <point key="canvasLocation" x="42" y="40"/>
         </tableViewCell>
