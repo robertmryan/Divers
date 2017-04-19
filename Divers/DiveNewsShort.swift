@@ -10,17 +10,7 @@ import UIKit
 
 class DiveNewsShort: UITableViewCell {
 
-    @IBOutlet weak var Label: UILabel!
-    override func awakeFromNib() {
-        super.awakeFromNib()
-        // Initialization code
-    }
+    @IBOutlet weak var newsLabel: UILabel!
 
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
-    }
-    
 }
 

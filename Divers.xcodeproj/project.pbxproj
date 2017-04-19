@@ -7,22 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1762BCB21EA6867B00E84B42 /* AVKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCA31EA6867B00E84B42 /* AVKit.framework */; };
-		1762BCB71EA6867B00E84B42 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCA81EA6867B00E84B42 /* CFNetwork.framework */; };
-		1762BCB91EA6867B00E84B42 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCAA1EA6867B00E84B42 /* MediaPlayer.framework */; };
-		1762BCBB1EA6867B00E84B42 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCAC1EA6867B00E84B42 /* Security.framework */; };
-		1762BCE61EA695F200E84B42 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCA21EA6867B00E84B42 /* AVFoundation.framework */; };
-		1762BCF01EA695F200E84B42 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCA91EA6867B00E84B42 /* Foundation.framework */; };
-		1762BCF41EA695F200E84B42 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCAB1EA6867B00E84B42 /* SafariServices.framework */; };
-		1762BCF81EA695F200E84B42 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCAD1EA6867B00E84B42 /* SystemConfiguration.framework */; };
-		1762BCFA1EA695F200E84B42 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1762BCAE1EA6867B00E84B42 /* UIKit.framework */; };
 		17A497F31EA13676004787BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A497F21EA13676004787BB /* AppDelegate.swift */; };
 		17A497F51EA13676004787BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A497F41EA13676004787BB /* ViewController.swift */; };
 		17A497F81EA13676004787BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A497F61EA13676004787BB /* Main.storyboard */; };
 		17A497FB1EA13676004787BB /* Divers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 17A497F91EA13676004787BB /* Divers.xcdatamodeld */; };
 		17A497FD1EA13676004787BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17A497FC1EA13676004787BB /* Assets.xcassets */; };
 		17A498001EA13676004787BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17A497FE1EA13676004787BB /* LaunchScreen.storyboard */; };
-		17A498081EA14269004787BB /* ProfilTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A498071EA14269004787BB /* ProfilTableView.swift */; };
 		17A4980B1EA144D9004787BB /* DiveNewsShort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A498091EA144D9004787BB /* DiveNewsShort.swift */; };
 		17A4980C1EA144D9004787BB /* DiveNewsShort.xib in Resources */ = {isa = PBXBuildFile; fileRef = 17A4980A1EA144D9004787BB /* DiveNewsShort.xib */; };
 		17A4980E1EA145AF004787BB /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17A4980D1EA145AF004787BB /* ProfileViewController.swift */; };
@@ -42,15 +32,6 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		1762BCA21EA6867B00E84B42 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = /Users/Florian/Documents/Xcode/Divers/AVFoundation.framework; sourceTree = "<absolute>"; };
-		1762BCA31EA6867B00E84B42 /* AVKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVKit.framework; path = /Users/Florian/Documents/Xcode/Divers/AVKit.framework; sourceTree = "<absolute>"; };
-		1762BCA81EA6867B00E84B42 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = /Users/Florian/Documents/Xcode/Divers/CFNetwork.framework; sourceTree = "<absolute>"; };
-		1762BCA91EA6867B00E84B42 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /Users/Florian/Documents/Xcode/Divers/Foundation.framework; sourceTree = "<absolute>"; };
-		1762BCAA1EA6867B00E84B42 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = /Users/Florian/Documents/Xcode/Divers/MediaPlayer.framework; sourceTree = "<absolute>"; };
-		1762BCAB1EA6867B00E84B42 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = /Users/Florian/Documents/Xcode/Divers/SafariServices.framework; sourceTree = "<absolute>"; };
-		1762BCAC1EA6867B00E84B42 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = /Users/Florian/Documents/Xcode/Divers/Security.framework; sourceTree = "<absolute>"; };
-		1762BCAD1EA6867B00E84B42 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = /Users/Florian/Documents/Xcode/Divers/SystemConfiguration.framework; sourceTree = "<absolute>"; };
-		1762BCAE1EA6867B00E84B42 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = /Users/Florian/Documents/Xcode/Divers/UIKit.framework; sourceTree = "<absolute>"; };
 		17A497EF1EA13676004787BB /* Divers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Divers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17A497F21EA13676004787BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		17A497F41EA13676004787BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -59,7 +40,6 @@
 		17A497FC1EA13676004787BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17A497FF1EA13676004787BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17A498011EA13676004787BB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		17A498071EA14269004787BB /* ProfilTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfilTableView.swift; sourceTree = "<group>"; };
 		17A498091EA144D9004787BB /* DiveNewsShort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiveNewsShort.swift; sourceTree = "<group>"; };
 		17A4980A1EA144D9004787BB /* DiveNewsShort.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiveNewsShort.xib; sourceTree = "<group>"; };
 		17A4980D1EA145AF004787BB /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
@@ -70,15 +50,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1762BCB21EA6867B00E84B42 /* AVKit.framework in Frameworks */,
-				1762BCE61EA695F200E84B42 /* AVFoundation.framework in Frameworks */,
-				1762BCF41EA695F200E84B42 /* SafariServices.framework in Frameworks */,
-				1762BCFA1EA695F200E84B42 /* UIKit.framework in Frameworks */,
-				1762BCF01EA695F200E84B42 /* Foundation.framework in Frameworks */,
-				1762BCB71EA6867B00E84B42 /* CFNetwork.framework in Frameworks */,
-				1762BCF81EA695F200E84B42 /* SystemConfiguration.framework in Frameworks */,
-				1762BCBB1EA6867B00E84B42 /* Security.framework in Frameworks */,
-				1762BCB91EA6867B00E84B42 /* MediaPlayer.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,7 +79,6 @@
 				17A497F41EA13676004787BB /* ViewController.swift */,
 				17A4980D1EA145AF004787BB /* ProfileViewController.swift */,
 				17A497F61EA13676004787BB /* Main.storyboard */,
-				17A498071EA14269004787BB /* ProfilTableView.swift */,
 				17A498091EA144D9004787BB /* DiveNewsShort.swift */,
 				17A4980A1EA144D9004787BB /* DiveNewsShort.xib */,
 				17A497FC1EA13676004787BB /* Assets.xcassets */,
@@ -152,7 +122,7 @@
 				TargetAttributes = {
 					17A497EE1EA13676004787BB = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = F59UMUY5BQ;
+						DevelopmentTeam = HQ8TLN3UQR;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -199,7 +169,6 @@
 				17A497F31EA13676004787BB /* AppDelegate.swift in Sources */,
 				17A4980B1EA144D9004787BB /* DiveNewsShort.swift in Sources */,
 				17A497FB1EA13676004787BB /* Divers.xcdatamodeld in Sources */,
-				17A498081EA14269004787BB /* ProfilTableView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,7 +292,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = F59UMUY5BQ;
+				DEVELOPMENT_TEAM = HQ8TLN3UQR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -334,7 +303,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Ernst.Divers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -345,7 +314,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				DEVELOPMENT_TEAM = F59UMUY5BQ;
+				DEVELOPMENT_TEAM = HQ8TLN3UQR;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -356,7 +325,7 @@
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "Florian-Ernst.Divers";
+				PRODUCT_BUNDLE_IDENTIFIER = com.robertmryan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
